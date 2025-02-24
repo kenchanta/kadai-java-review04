@@ -15,7 +15,7 @@ public class Animal {
     this.age = age;
     }
 
-    public void say(String name, int age) {
+    public void say() {
         System.out.println(name + "です。" + age + "歳です。");
     }
 

@@ -24,7 +24,7 @@ public class Human extends Animal implements Thinkable {
     }
 
     @Override
-    public void think(String hobby) {
+    public void think() {
         System.out.println(hobby + "について考えています。");
     }
 }

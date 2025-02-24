@@ -2,6 +2,6 @@ package animal;
 
 public interface Thinkable {
 
-    void think(String hobby) ;
+    void think() ;
 
 }

@@ -9,15 +9,23 @@ public class Review04 {
         Human suzuki = new Human();
         Human sato = new Human();
 
-        //メソッド
-        tanaka.say("田中　太郎", 25);
-        tanaka.think("電車");
+        tanaka.setName("田中 太郎");
+        tanaka.setAge(25);
+        tanaka.setHobby("電車");
+        tanaka.say();
+        tanaka.think();
 
-        suzuki.say("鈴木　太郎", 30);
-        suzuki.think("野球");
+        suzuki.setName("鈴木 次郎");
+        suzuki.setAge(30);
+        suzuki.setHobby("野球");
+        suzuki.say();
+        suzuki.think();
 
-        sato.say("佐藤　花子", 20);
-        sato.think("映画");
+        sato.setName("佐藤 花子");
+        sato.setAge(20);
+        sato.setHobby("映画");
+        sato.say();
+        sato.think();
 
     }
 }
