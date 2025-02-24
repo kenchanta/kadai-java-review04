@@ -5,27 +5,34 @@ public class Review04 {
     public static void main(String[] args) {
 
         //インスタンス化
-        Human tanaka = new Human();
-        Human suzuki = new Human();
-        Human sato = new Human();
+        Human tanaka = new Human("田中 太郎", 25, "電車");
+        Human suzuki = new Human("鈴木 次郎", 30, "野球");
+        Human sato = new Human("佐藤 花子", 20, "映画");
 
-        tanaka.setName("田中 太郎");
-        tanaka.setAge(25);
-        tanaka.setHobby("電車");
+        //名前・年齢・趣味の各情報は、コンストラクタで初期化するようにしてください
+         class Human{
+             //フィールド
+             String name;
+             int age;
+             String hobby;
+
+             //コンストラクタ
+             public Human(String name, int age, String hobby) {
+                this.name = name;
+                this.age = age;
+                this.hobby = hobby;
+             }
+         }
+
         tanaka.say();
         tanaka.think();
 
-        suzuki.setName("鈴木 次郎");
-        suzuki.setAge(30);
-        suzuki.setHobby("野球");
         suzuki.say();
         suzuki.think();
 
-        sato.setName("佐藤 花子");
-        sato.setAge(20);
-        sato.setHobby("映画");
         sato.say();
         sato.think();
+
 
     }
 }

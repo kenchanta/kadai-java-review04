@@ -17,9 +17,9 @@ public class Human extends Animal implements Thinkable {
     public Human() {
     }
 
+    //名前と年齢の初期化については、スーパークラス（Animal）のコンストラクタを利用する
     public Human(String name, int age, String hobby) {
-        super.setName(name);
-        super.setAge(age);
+        super(name,age);
         this.hobby = hobby;
     }
 
